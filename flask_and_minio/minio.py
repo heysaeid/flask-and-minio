@@ -34,6 +34,6 @@ class FlaskAndMinio:
     def get_client(self) -> Minio:
         return self.client
     
-    def get_url(self, bucker_name: str, object_name: str, **kwargs) -> str:
-        url = self.client.presigned_get_object(bucker_name, object_name, **kwargs)
-        return self.domain + '/' + '/'.join(url.split('/')[3:])   
+    def get_url(self, bucket_name: str, object_name: str, **kwargs) -> str:
+        url = self.client.presigned_get_object(bucket_name, object_name, **kwargs)
+        return self.domain + '/' + '/'.join(url.split('/')[3:])  
