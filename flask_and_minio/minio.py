@@ -21,14 +21,13 @@ class FlaskAndMinio:
 
         self.domain = app.config['MINIO_LOAD_BALANCER_URL']
         self.client = Minio(
-            endpoint=self.domain,
+            endpoint=app.config['MINIO_ENDPOINT'],
             access_key=app.config['MINIO_ACCESS_KEY'],
             secret_key=app.config['MINIO_SECRET_KEY'],
             secure=app.config['MINIO_SECURE'],
             region = app.config['MINIO_REGION'],
             http_client = app.config['MINIO_HTTP_CLIENT']
         )
-
         app.extensions['minio'] = self
 
     def get_client(self) -> Minio:
