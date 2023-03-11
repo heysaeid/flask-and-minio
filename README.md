@@ -19,6 +19,7 @@ app.config['MINIO_ACCESS_KEY	'] = 'minioadmin'
 app.config['MINIO_SECRET_KEY'] = 'minioadmin'
 minio = FlaskAndMinio(app)
 
+mc = minio.get_client() # This client method returns the minio for direct use
 minio.get_url('bucket', 'object-name.png')
 minio.remove_file('bucket', 'object-name.png')
 ```
@@ -34,6 +35,7 @@ app.config['MINIO_ACCESS_KEY	'] = 'minioadmin'
 app.config['MINIO_SECRET_KEY'] = 'minioadmin'
 minio.init_app(app)
 
+mc = minio.get_client() # This client method returns the minio for direct use
 minio.get_url('bucket', 'object-name.png')
 minio.remove_file('bucket', 'object-name.png')
 ```
