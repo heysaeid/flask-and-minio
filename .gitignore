@@ -1,2 +1,5 @@
 __pycache__/
 env3/
+dist/
+build/
+flask_and_minio.egg-info

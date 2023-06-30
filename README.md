@@ -4,7 +4,7 @@ FlaskAndMinio allows you to easily use MinIO in your Flask projects and offers s
 ## Install
 You can either download the source code of this repository or install it via pip:
 ```
-pip install git+https://github.com/heysaeid/flask-and-minio
+pip install flask-and-minio
 ```
 
 ## Usage
