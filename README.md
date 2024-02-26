@@ -3,13 +3,13 @@ FlaskAndMinio allows you to easily use MinIO in your Flask projects and offers s
 
 ## Install
 You can either download the source code of this repository or install it via pip:
-```
+```shell
 pip install flask-and-minio
 ```
 
 ## Usage
 You can add it to your program in the following two ways:
-```
+```python
 from flask import Flask
 from flask_and_minio import FlaskAndMinio
 
@@ -24,7 +24,7 @@ minio.get_url('bucket', 'object-name.png')
 minio.remove_file('bucket', 'object-name.png')
 ```
 Or:
-```
+```python
 from flask import Flask
 from flask_and_minio import FlaskAndMinio
 
