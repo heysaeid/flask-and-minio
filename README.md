@@ -1,4 +1,9 @@
 # Flask And MinIO
+[![Package version](https://img.shields.io/pypi/v/flask-and-minio?color=%2334D058&label=pypi%20package)](https://pypi.org/project/flask-and-minio/)
+[![Downloads](https://img.shields.io/pypi/dm/flask-and-minio)](https://pypi.org/project/flask-and-minio/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/flask-and-minio.svg?color=%2334D058)](https://pypi.org/project/flask-and-minio/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/heysaeid/flask-and-minio/blob/master/LICENSE)
+
 FlaskAndMinio allows you to easily use MinIO in your Flask projects and offers some features to improve and ease things.
 
 ## Install
